@@ -18,6 +18,15 @@
     body.night .listbutton{background:#2b2940;color:#f6f1ff;border-color:#4a4767}
     #app{width:100%;max-width:560px;min-height:100dvh;padding-left:clamp(14px,5vw,20px);padding-right:clamp(14px,5vw,20px)}
     .hero::after{display:none!important}
+    .home-page{min-height:calc(100dvh - 28px);display:flex;flex-direction:column;gap:clamp(8px,1.4dvh,14px);padding-top:clamp(2px,1.2dvh,12px);padding-bottom:8px}
+    .home-page .center{margin:0}
+    .home-page .card{margin:0}
+    .home-quick,.home-footer{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+    .home-quick button,.home-footer button{margin:0;padding:11px 8px;min-height:48px;font-size:15px}
+    .home-quick .primary{grid-column:1/-1}
+    .weekly-card{padding:12px 16px}
+    .weekly-card h2{font-size:18px}
+    @media(max-height:760px){.home-page{gap:7px;padding-top:1px}.home-page .hero{padding:6px 12px 8px}.home-page .hero img{height:46px}.home-page h1{font-size:23px}.home-page .hero p{font-size:13px}.home-quick button,.home-footer button{min-height:43px;padding:9px 7px}.weekly-card{padding:9px 14px}.weekly-card h2{font-size:17px}.weekly-card p{font-size:13px}.dotline{font-size:18px}}
   </style>
 </head>
 <body>
@@ -25,7 +34,7 @@
   <dialog id="dialog"></dialog>
   <input id="restore-file" type="file" accept="application/json,.json" hidden>
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-  <script src="supabase-config.js?v=11"></script>
-  <script src="app.js?v=11"></script>
+<script src="supabase-config.js?v=12"></script>
+<script src="app.js?v=12"></script>
 </body>
 </html>
