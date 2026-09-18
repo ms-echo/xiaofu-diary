@@ -27,6 +27,20 @@
     .home-quick .primary{grid-column:1/-1}
     .weekly-card{padding:12px 16px}
     .weekly-card h2{font-size:18px}
+    /* 打卡表单：信息密度更舒服，常用选择无需滚动太久。 */
+    dialog:has(.seg){width:min(calc(100% - 40px),500px)}
+    dialog:has(.seg) .modal{padding:17px 18px 15px;max-height:82dvh}
+    dialog:has(.seg) .modal h2{font-size:20px;margin-bottom:8px}
+    dialog:has(.seg) .modal h3{font-size:16px;margin:13px 0 6px}
+    dialog:has(.seg) .field{font-size:13px;margin-top:8px}
+    dialog:has(.seg) .field input,dialog:has(.seg) .field select,dialog:has(.seg) .field textarea{margin-top:4px;padding:9px 11px;border-radius:12px;font-size:14px}
+    dialog:has(.seg) .seg{gap:6px;margin:5px 0 9px}
+    dialog:has(.seg) .seg button{padding:8px 3px;border-radius:12px;font-size:14px}
+    dialog:has(.seg) .checkgrid{gap:3px 14px}
+    dialog:has(.seg) .check{gap:6px;padding:2px 0;font-size:13px}
+    dialog:has(.seg) .check input{width:16px;height:16px}
+    dialog:has(.seg) .modal-actions{margin-top:13px;gap:8px}
+    dialog:has(.seg) .modal-actions button{padding:9px 12px;font-size:14px}
     @media(max-height:760px){.home-page{gap:7px;padding-top:1px}.home-page .hero{padding:6px 12px 8px}.home-page .hero img{height:46px}.home-page h1{font-size:23px}.home-page .hero p{font-size:13px}.home-quick button,.home-footer button{min-height:43px;padding:9px 7px}.weekly-card{padding:9px 14px}.weekly-card h2{font-size:17px}.weekly-card p{font-size:13px}.dotline{font-size:18px}}
   </style>
 </head>
@@ -35,7 +49,7 @@
   <dialog id="dialog"></dialog>
   <input id="restore-file" type="file" accept="application/json,.json" hidden>
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script src="supabase-config.js?v=12"></script>
-<script src="app.js?v=12"></script>
+<script src="supabase-config.js?v=13"></script>
+<script src="app.js?v=13"></script>
 </body>
 </html>
