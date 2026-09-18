@@ -3,19 +3,25 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="color-scheme" content="light">
   <meta name="theme-color" content="#fff7e8">
   <title>小腹日记</title>
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <link rel="stylesheet" href="style.css">
-  <style>.hero::after{display:none!important}</style>
+  <style>
+    html{color-scheme:light!important;-webkit-text-size-adjust:100%;text-size-adjust:100%}
+    body{color-scheme:light!important;background:var(--bg)!important;color:var(--ink)!important}
+    #app{width:100%;max-width:560px;min-height:100dvh;padding-left:clamp(14px,5vw,20px);padding-right:clamp(14px,5vw,20px)}
+    .hero::after{display:none!important}
+  </style>
 </head>
 <body>
   <main id="app"></main>
   <dialog id="dialog"></dialog>
   <input id="restore-file" type="file" accept="application/json,.json" hidden>
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-  <script src="supabase-config.js?v=9"></script>
-  <script src="app.js?v=9"></script>
+  <script src="supabase-config.js?v=10"></script>
+  <script src="app.js?v=10"></script>
 </body>
 </html>
