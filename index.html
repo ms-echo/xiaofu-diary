@@ -12,6 +12,10 @@
   <style>
     html{color-scheme:light!important;-webkit-text-size-adjust:100%;text-size-adjust:100%}
     body{color-scheme:light!important;background:var(--bg)!important;color:var(--ink)!important}
+    body.night .white,body.night .entry,body.night .field input,body.night .field select,body.night .field textarea,body.night .seg button,body.night dialog{background:#2b2940;color:#f6f1ff;border-color:#4a4767}
+    body.night .modal-actions button{background:#3b3855;color:#f6f1ff}
+    body.night .modal-actions .save,body.night .secondary{background:var(--sub);color:var(--ink)}
+    body.night .listbutton{background:#2b2940;color:#f6f1ff;border-color:#4a4767}
     #app{width:100%;max-width:560px;min-height:100dvh;padding-left:clamp(14px,5vw,20px);padding-right:clamp(14px,5vw,20px)}
     .hero::after{display:none!important}
   </style>
@@ -21,7 +25,7 @@
   <dialog id="dialog"></dialog>
   <input id="restore-file" type="file" accept="application/json,.json" hidden>
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-  <script src="supabase-config.js?v=10"></script>
-  <script src="app.js?v=10"></script>
+  <script src="supabase-config.js?v=11"></script>
+  <script src="app.js?v=11"></script>
 </body>
 </html>
