@@ -1,0 +1,1 @@
+self.addEventListener('install',e=>e.waitUntil(caches.open('xiaofu-github-v1').then(c=>c.addAll(['./','./index.html','./style.css','./app.js','./manifest.webmanifest','./icon.png','./mascot-happy.png','./mascot-waiting.png']))));self.addEventListener('fetch',e=>e.respondWith(caches.match(e.request).then(r=>r||fetch(e.request))));
